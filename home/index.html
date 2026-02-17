@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - VelosityOS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../index.html" class="nav-button">Home</a>
+        <a href="../how-to-use/index.html" class="nav-button">How to use</a>
+        <a href="../how-to-install/index.html" class="nav-button">How to install</a>
+    </nav>
+
+    <main class="content">
+        <section class="intro">
+            <h1>Welcome to VelosityOS</h1>
+            <p>VelosityOS is your ultimate solution for optimizing your Windows system. With just a few clicks, you can clean, boost, and optimize your computer for peak performance.</p>
+        </section>
+
+        <section class="download-section">
+            <button class="download-btn" onclick="downloadFile()">Download Now</button>
+        </section>
+    </main>
+
+    <script>
+        function downloadFile() {
+            const fileUrl = 'https://github.com/Mulino-Y/VelosityOS/releases/download/v2.4/exe.rar';
+            const link = document.createElement('a');
+            link.href = fileUrl;
+            link.download = 'VelosityOS.exe';
+            link.click();
+        }
+    </script>
+</body>
+</html>

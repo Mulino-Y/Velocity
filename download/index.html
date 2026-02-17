@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download - VelosityOS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../index.html" class="navbar-logo">VelosityOS</a>
+        <div class="nav-links">
+            <a href="../index.html" class="nav-button">Home</a>
+            <a href="../how-to-use/index.html" class="nav-button">How to use</a>
+            <a href="../how-to-install/index.html" class="nav-button">How to install</a>
+            <a href="../download/index.html" class="nav-button">Download</a>
+        </div>
+    </nav>
+
+    <main class="content">
+        <section class="section">
+            <h2>Download VelosityOS</h2>
+            <p>Get the latest version of VelosityOS and start optimizing your Windows system today. Fast, secure, and completely free.</p>
+            
+            <div style="margin-top: 40px; text-align: center;">
+                <button class="download-btn" onclick="downloadFile()">
+                    Download VelosityOS v2.4
+                </button>
+                <p style="margin-top: 20px; color: #4b5563;">Windows 10/11 • 64-bit • ~150MB</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function downloadFile() {
+            const fileUrl = 'https://github.com/Mulino-Y/VelosityOS/releases/download/v2.4/exe.rar';
+            const link = document.createElement('a');
+            link.href = fileUrl;
+            link.download = 'VelosityOS.exe';
+            link.click();
+        }
+    </script>
+</body>
+</html>

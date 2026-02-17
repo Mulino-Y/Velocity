@@ -1,67 +1,36 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VelosityOS</title>
+    <title>VelosityOS - Windows Optimization Simplified</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="background-decoration left"></div>
-    <div class="background-decoration right"></div>
-    
-    <div class="hero-section">
-        <div class="hero-content">
-            <div class="logo-container">
-                <svg class="logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="50" cy="50" r="45" fill="#0066FF"/>
-                    <text x="50" y="60" font-size="50" font-weight="bold" text-anchor="middle" fill="white" font-family="Arial">V</text>
-                </svg>
-            </div>
-            
-            <h1 class="main-heading">VelosityOS — это удобное и эфективное приложение для укорения работы Windows</h1>
-            
-            <div class="features-grid">
-                <div class="feature-item">
-                    <span class="checkmark">✓</span>
-                    <span>Clean</span>
-                </div>
-                <div class="feature-item">
-                    <span class="checkmark">✓</span>
-                    <span>Boost</span>
-                </div>
-                <div class="feature-item">
-                    <span class="checkmark">✓</span>
-                    <span>Optimization</span>
-                </div>
-                </div>
-                
-                <div class="center-text">
-                    <span><strong>All in one program</strong></span>
-                </div>                
-                <div class="features-grid">
-            </div>
-            
-            <div class="button-container">
-                <button class="download-btn" onclick="downloadFile()">Скачать бесплатно</button>
-            </div>
-            
-            <div class="trust-section">
-                <p class="guarantee">Подходит для windows 10/11</p>
-                <div class="rating">
-                    <span class="stars">★★★★★</span>
-                    <span class="rating-text">Profesional Cleaner</span>
-                </div>
-            </div>
+    <nav class="navbar">
+        <a href="index.html" class="navbar-logo">VelosityOS</a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-button">Home</a>
+            <a href="how-to-use/index.html" class="nav-button">How to use</a>
+            <a href="how-to-install/index.html" class="nav-button">How to install</a>
+            <a href="download/index.html" class="nav-button">Download</a>
         </div>
-    </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Optimize Your Windows Experience</h1>
+            <p>VelosityOS is your ultimate solution for optimizing your Windows system. Clean, boost, and optimize your computer for peak performance with professionally-designed tools.</p>
+            <button class="download-btn" onclick="downloadFile()">Download Now</button>
+        </div>
+    </section>
 
     <script>
         function downloadFile() {
-            // Replace 'your-file.zip' with your actual file path
             const fileUrl = 'https://github.com/Mulino-Y/VelosityOS/releases/download/v2.4/exe.rar';
             const link = document.createElement('a');
             link.href = fileUrl;
-            link.download = 'https://github.com/Mulino-Y/VelosityOS/releases/download/v2.4/exe.rar';
+            link.download = 'VelosityOS.exe';
             link.click();
         }
     </script>
